@@ -55,17 +55,28 @@
     }
 
     nav {
-      background-color: #1a1a1a;
-      padding: 10px;
-      text-align: center;
-    }
+  background-color: rgba(0, 0, 0, 0.9); /* ahora más opaco para contraste */
+  padding: 12px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(255, 0, 0, 0.3);
+}
 
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+nav a {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff3333;
+}
+
 
     .section {
       padding: 40px 20px;
