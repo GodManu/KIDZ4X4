@@ -13,6 +13,7 @@
       font-family: 'Arial', sans-serif;
       background-color: #0c0c0c;
       color: white;
+       padding-top: 50px; /* espacio para la barra */
     }
 
     .hero-banner {
@@ -150,6 +151,19 @@ background-color: #111; /* opcional, para relleno */
 }
 er-radius: 8px;
 }
+    .promo-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ff0000;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px 10px;
+  font-size: 1.1em;
+  z-index: 9999;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
   </style>
 </head>
 <body>
@@ -168,8 +182,10 @@ er-radius: 8px;
     </div>
   </header>
 
+  <div class="promo-bar">
+  🎁 PROMO: ¡Renta 1 hora y te damos 15 minutos extra este fin de semana!
+</div>
   
-
   <!-- Renta -->
   <div class="section" id="renta">
     <h2>Modelos Disponibles en Renta</h2>
