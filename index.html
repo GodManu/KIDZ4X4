@@ -94,13 +94,35 @@
       padding: 20px;
       text-align: center;
     }
+    .hero-banner {
+  background-image: url('Images/KIDZ4X4BANNER.png');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* oscurece un poco para mejor lectura */
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
   </style>
 </head>
 <body>
-  <header>
-    <h1>KIDZ 4X4</h1>
-    <p>NO ES UN JUGUETE, ES SU PRIMERA MÁQUINA</p>
-  </header>
+  <header class="hero-banner">
+  <div class="overlay">
+    <h1>KIDZ4X4</h1>
+    <p>No es un juguete, es su primera máquina</p>
+  </div>
+</header>
   <nav>
     <a href="#venta">Venta</a>
     <a href="renta.html" class="btn">Renta un carrito</a>
