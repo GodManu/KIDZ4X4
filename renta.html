@@ -143,13 +143,11 @@ nav a:hover {
   width: 100%;
   height: 200px;
   object-fit: contain;
-background-color: #111; /* opcional, para relleno */
-  object-position: center center; /* centrado horizontal y vertical */
+  background-color: #111;
+  object-position: center center;
   border-radius: 8px;
   display: block;
   margin: 0 auto;
-}
-er-radius: 8px;
 }
    .promo-bar {
   position: fixed;
@@ -164,12 +162,21 @@ er-radius: 8px;
   z-index: 9999;
   box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
+
+.promo-bar .close-btn {
+  position: absolute;
+  right: 15px;
+  top: 8px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
   </style>
 </head>
 <body>
 
-  <div class="promo-bar">
+ <div class="promo-bar" id="promoBar">
   🎁 PROMO: ¡Renta 1 hora y te damos 15 minutos extra este fin de semana!
+  <span class="close-btn" onclick="cerrarPromo()">✖️</span>
 </div>
   
   <!-- Menú de navegación -->
@@ -223,6 +230,16 @@ er-radius: 8px;
   <footer>
     <p>&copy; 2025 KIDZ 4X4 | Renta de Carritos Eléctricos en Los Cabos</p>
   </footer>
+  
+<script>
+  // Función para cerrar la promo
+  function cerrarPromo() {
+    document.getElementById("promoBar").style.display = "none";
+  }
 
+  // Cierre automático después de 5 segundos
+  setTimeout(cerrarPromo, 5000);
+</script>
+  
 </body>
 </html>
