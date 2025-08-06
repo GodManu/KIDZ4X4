@@ -2,115 +2,184 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Renta de Carritos | KIDZ4X4</title>
-  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Renta de carritos eléctricos 4x4 para niños en Los Cabos" />
+  <meta name="author" content="KIDZ 4X4" />
+  <title>Renta | KIDZ 4X4</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
     body {
       margin: 0;
-      font-family: 'Russo One', sans-serif;
-      background-color: #121212;
-      color: #fff;
+      font-family: 'Arial', sans-serif;
+      background-color: #0c0c0c;
+      color: white;
     }
-    header {
-      background-color: #d40000;
-      padding: 20px;
+
+    .hero-banner {
+      background-image: url('Images/KIDZ4X4BANNER.png');
+      background-size: cover;
+      background-position: center;
+      height: 320px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      letter-spacing: 2px;
-    }
-    .banner {
-      background: url('https://example.com/banner-renta.jpg') center/cover no-repeat;
-      height: 250px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-shadow: 2px 2px 5px black;
-    }
-    .banner h2 {
-      font-size: 2rem;
-    }
-    .content {
-      padding: 30px;
-      max-width: 900px;
-      margin: auto;
-    }
-    .renta-card {
-      background: #1e1e1e;
-      border: 2px solid #ff0000;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 30px;
-      box-shadow: 0 0 10px #ff0000;
-    }
-    .renta-card img {
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
       width: 100%;
+      height: 100%;
+      padding: 20px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .overlay h1 {
+      font-size: 2.8em;
+      margin: 0;
+      color: #ff2a2a;
+      text-shadow: 2px 2px 8px black;
+    }
+
+    .overlay p {
+      font-size: 1.4em;
+      margin-top: 10px;
+      color: #fff;
+      text-shadow: 1px 1px 6px black;
+    }
+
+    nav {
+      background-color: #1a1a1a;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      color: #ff3333;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    }
+
+    .product img {
+      max-width: 100%;
       border-radius: 8px;
-      margin-bottom: 15px;
     }
-    .renta-card h3 {
-      margin: 0 0 10px;
+
+    .product h3 {
+      color: #ff5555;
+      margin-top: 15px;
     }
-    .renta-card p {
-      margin: 0 0 10px;
-      line-height: 1.5;
+
+    .product p {
+      font-size: 0.95em;
     }
+
     .btn {
+      display: inline-block;
+      margin-top: 10px;
       background-color: #ff0000;
       color: white;
       padding: 10px 20px;
       border: none;
       border-radius: 6px;
-      cursor: pointer;
-      font-size: 1rem;
       text-decoration: none;
+      font-weight: bold;
     }
+
     .btn:hover {
       background-color: #c10000;
     }
+
     footer {
       background-color: #111;
+      color: #aaa;
+      padding: 20px;
       text-align: center;
-      padding: 15px;
-      color: #777;
-      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>KIDZ4X4</h1>
-    <p>No es un juguete, es su primera máquina</p>
+
+  <!-- Banner -->
+  <header class="hero-banner">
+    <div class="overlay">
+      <h1>KIDZ4X4</h1>
+      <p>No es un juguete, es su primera máquina</p>
+    </div>
   </header>
 
-  <div class="banner">
-    <h2>¡Renta un carrito 4x4 para tus hijos hoy!</h2>
+  <!-- Menú de navegación -->
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="#renta">Modelos en Renta</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <!-- Renta -->
+  <div class="section" id="renta">
+    <h2>Modelos Disponibles en Renta</h2>
+    <div class="products">
+
+      <div class="product">
+        <img src="canam1.jpg" alt="Can-Am Rojo Renta">
+        <h3>Can-Am Maverick Kids Edition</h3>
+        <p>Incluye batería cargada, luces LED, bocina, control remoto para papás y cinturón de seguridad.</p>
+        <p><strong>$500 MXN por 1 hora</strong></p>
+        <a class="btn" href="https://wa.me/5216240000000?text=Hola!%20Quiero%20rentar%20el%20Can-Am%20para%20niños">¡Reservar por WhatsApp!</a>
+      </div>
+
+      <div class="product">
+        <img src="jeep1.jpg" alt="Mini Jeep Renta">
+        <h3>Mini Jeep Militar 4x4</h3>
+        <p>Estilo militar con suspensión realista, luces LED, bocina y control parental. ¡Ideal para eventos o fines de semana!</p>
+        <p><strong>$450 MXN por 1 hora</strong></p>
+        <a class="btn" href="https://wa.me/5216240000000?text=Hola!%20Quiero%20rentar%20el%20Jeep%204x4%20para%20niños">¡Reservar ahora!</a>
+      </div>
+
+    </div>
   </div>
 
-  <div class="content">
-    <div class="renta-card">
-      <img src="https://example.com/canam1.jpg" alt="Carrito Can-Am para renta">
-      <h3>Can-Am Maverick Kids Edition</h3>
-      <p>Perfecto para eventos, fiestas infantiles o fines de semana. Incluye batería cargada, control remoto para papás y cinturón de seguridad.</p>
-      <p><strong>Precio:</strong> $500 MXN por 1 hora</p>
-      <a class="btn" href="https://wa.me/526241234567?text=Hola!%20Quiero%20rentar%20un%20carrito%20KIDZ4X4">¡Reservar por WhatsApp!</a>
-    </div>
-
-    <div class="renta-card">
-      <img src="https://example.com/jeep1.jpg" alt="Jeep para niños">
-      <h3>Mini Jeep 4x4 Militar</h3>
-      <p>Estilo militar con luces LED, suspensión realista y bocina. Diversión garantizada para los peques aventureros.</p>
-      <p><strong>Precio:</strong> $450 MXN por 1 hora</p>
-      <a class="btn" href="https://wa.me/526241234567?text=Hola!%20Quiero%20rentar%20el%20Jeep%20militar%20para%20niños">¡Reservar ahora!</a>
-    </div>
+  <!-- Contacto -->
+  <div class="section" id="contacto">
+    <h2>Contáctanos</h2>
+    <p>WhatsApp: <a href="https://wa.me/5216240000000" style="color: #ff5555;">624 000 0000</a></p>
+    <p>Email: contacto@kidz4x4.com</p>
   </div>
 
+  <!-- Footer -->
   <footer>
-    © 2025 KIDZ4X4 - Renta y Venta de Carritos Eléctricos para Niños
+    <p>&copy; 2025 KIDZ 4X4 | Renta de Carritos Eléctricos en Los Cabos</p>
   </footer>
+
 </body>
 </html>
