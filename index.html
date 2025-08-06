@@ -13,6 +13,7 @@
       font-family: 'Arial', sans-serif;
       background-color: #0c0c0c;
       color: white;
+      padding-top: 50px; /* espacio para la barra */
     }
 
     /* === BANNER DE CABECERA CON IMAGEN === */
@@ -166,6 +167,20 @@ background-color: #111; /* opcional, para relleno */
 .btn:hover {
   background-color: #1ebd5b;
 }
+    .promo-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ff0000;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px 10px;
+  font-size: 1.1em;
+  z-index: 9999;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
 
 
   </style>
@@ -186,9 +201,10 @@ background-color: #111; /* opcional, para relleno */
     </div>
   </header>
  
-  <div style="background: #ff0000; color: white; text-align: center; padding: 10px; font-weight: bold;">
+<div class="promo-bar">
   🎁 PROMO: ¡Renta 1 hora y te damos 15 minutos extra este fin de semana!
 </div>
+
 
 <div class="section" id="video">
   <h2>¡Mira cómo se vive la aventura!</h2>
